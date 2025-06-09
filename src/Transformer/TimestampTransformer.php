@@ -6,12 +6,12 @@ use Netmex\TransformerBundle\Contracts\TransformerInterface;
 
 class TimestampTransformer implements TransformerInterface
 {
-    public function transform(string|int $data): \DateTimeInterface
+    public function transform($data): \DateTimeInterface
     {
-        return (new \DateTimeImmutable())->setTimestamp((int)$data);
+        return new \DateTimeImmutable("@".(int)$data);
     }
 
-    public function reverse(\DateTimeInterface $data): int
+    public function reverse($data): int
     {
         return $data->getTimestamp();
     }

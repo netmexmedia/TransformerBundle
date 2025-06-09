@@ -6,12 +6,12 @@ use Netmex\TransformerBundle\Contracts\TransformerInterface;
 
 class TrimTransformer implements TransformerInterface
 {
-    public function transform(string $data): string
+    public function transform($data): string
     {
         return trim($data);
     }
 
-    public function reverse(string $data): string
+    public function reverse($data): string
     {
         return $data;
     }

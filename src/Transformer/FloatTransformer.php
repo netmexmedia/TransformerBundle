@@ -6,12 +6,12 @@ use Netmex\TransformerBundle\Contracts\TransformerInterface;
 
 class FloatTransformer implements TransformerInterface
 {
-    public function transform(mixed $data): float
+    public function transform($data): float
     {
         return (float) $data;
     }
 
-    public function reverse(float $data): string
+    public function reverse($data): string
     {
         return (string) $data;
     }

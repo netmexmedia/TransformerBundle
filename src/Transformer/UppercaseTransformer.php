@@ -6,12 +6,12 @@ use Netmex\TransformerBundle\Contracts\TransformerInterface;
 
 class UppercaseTransformer implements TransformerInterface
 {
-    public function transform(string $data): string
+    public function transform($data): string
     {
         return strtoupper($data);
     }
 
-    public function reverse(string $data): string
+    public function reverse($data): string
     {
         return strtolower($data);
     }
