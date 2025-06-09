@@ -1,0 +1,26 @@
+{
+  "name": "netmex/transformer-bundle",
+  "type": "symfony-bundle",
+  "require": {
+    "symfony/framework-bundle": "^7.2"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Netmex\\TransformerBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Netmex\\TransformerBundle\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Danny Verhoeven"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^12.1"
+  }
+}

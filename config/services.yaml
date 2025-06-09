@@ -1,0 +1,7 @@
+services:
+  Netmex\TransformerBundle\Transformer\:
+    resource: '../src/Transformer/*'
+    tags: ['transformer.service']
+    autowire: true
+    autoconfigure: true
+    public: false
